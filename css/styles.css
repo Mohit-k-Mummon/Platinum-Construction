@@ -3,7 +3,7 @@
     --color-primary: #272635;
     --color-secondary: #d6d6b1;
     --color-accent: #de541e;
-    --color-tertiary: #778da9;
+    --color-tertiary: #f7f7f7;
     --color-quaternary: #878472; 
 }
 
@@ -31,4 +31,33 @@ h2 {
     h1 {
         font-size: 5.5rem;
     }
+}
+
+
+
+
+/* Cards */
+.card {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    background: var(--color-tertiary);
+}
+
+.card__image {
+    width: 100%;
+}
+
+.card__body {
+    padding: 2rem;
+}
+
+.card__heading {
+    margin: 1.5rem 0 1rem 0;
+    color: var(--color-primary);
+}
+
+.card__text {
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
