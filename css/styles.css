@@ -213,3 +213,47 @@ h2 {
     }
 }
 
+
+
+
+/* Project Card */
+.project {
+    position: relative;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+.project__image {
+    width: 100%;
+}
+
+.project__image:hover {
+    width: 110%;
+}
+
+.project__overlay {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project__overlay:hover {
+    opacity: 0.8;
+}
+
+.project__text {
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    position: absolute;
+    font-size: 2.4rem;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
