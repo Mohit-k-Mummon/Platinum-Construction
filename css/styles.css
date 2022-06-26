@@ -1,10 +1,17 @@
 /* Color Pallete */
 :root {
-    --color-primary: #272635;
+    --color-primary: #1E2D3B;
     --color-secondary: #d6d6b1;
-    --color-accent: #de541e;
-    --color-tertiary: #f7f7f7;
+    --color-accent: #EDCD1F;
+    --color-text: #3D5975;
     --color-quaternary: #878472; 
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
 }
 
 
@@ -16,7 +23,7 @@ html {
 }
 
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -70,6 +77,139 @@ h2 {
     display: grid;
 }
 
-.grid--1x2 {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (min-width:768px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
+.container {
+    max-width: 1140px;
+}
+
+
+
+
+/* Banner */
+.banner-background {
+    background: var(--color-accent);
+}
+
+.banner {
+    background: var(--color-accent);
+    text-align: center;
+    color: var(--color-text);
+    margin: 0 auto;
+}
+
+.banner.grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-items: center;
+}
+
+.banner__heading {
+    font-size: 3.5rem;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+}
+
+.banner__text {
+    font-size: 2.4rem;
+    word-spacing: 100vh;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+}
+
+
+@media screen and (min-width:768px) {
+    .banner {
+        padding: 2rem;
+    }
+    .banner.grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .banner__heading {
+        font-size: 6rem;
+    }
+
+    .banner__year {
+        border-right: 2px solid #fff;
+        position: relative;
+    }
+
+    .banner__year::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: var(--color-accent);
+        height: 40px;
+        width: 25px;
+        right: -15px;
+    }
+
+    .banner__year::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: var(--color-accent);
+        height: 40px;
+        width: 25px;
+        bottom: 0;
+        right: -15px;
+    }
+
+    .banner__projects {
+        border-right: 2px solid #fff;
+        position: relative;
+    }
+
+    .banner__projects::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: var(--color-accent);
+        height: 40px;
+        width: 25px;
+        right: -15px;
+    }
+
+    .banner__projects::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: var(--color-accent);
+        height: 40px;
+        width: 25px;
+        bottom: 0;
+        right: -15px;
+    }
+
+    .banner__contractors {
+        border-right: 2px solid #fff;
+        position: relative;
+    }
+
+    .banner__contractors::before {
+        content: '';
+        display: block;
+        position: absolute;
+        background: var(--color-accent);
+        height: 40px;
+        width: 25px;
+        right: -15px;
+    }
+
+    .banner__contractors::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: var(--color-accent);
+        height: 40px;
+        width: 25px;
+        bottom: 0;
+        right: -15px;
+    }
+}
+
