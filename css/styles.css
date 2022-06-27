@@ -400,3 +400,62 @@ h2 {
         background-color: #fff;
     }
 }
+
+
+
+
+/* About Block */
+.block-about {
+    background: #f7f7f7;
+    width: 100%;
+}
+
+.about__image {
+    width: 100%;
+}
+
+.about__header {
+    background: #f7f7f7;
+    margin: 4rem ;
+    position: relative;
+}
+
+.about__heading {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.about-underline {
+position: absolute;
+top: 40px;
+left: -15px;
+
+}
+
+.about__text {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    line-height: 1.7;
+}
+
+@media screen and (min-width:768px) {
+    .about__image {
+        width: auto;
+        justify-self: start;
+        order: 2;
+    }
+
+    .about__grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .about__heading {
+        font-size: 6rem;
+    }
+
+    .about-underline {
+        top: 50px;
+        left: -30px;
+    }
+}
