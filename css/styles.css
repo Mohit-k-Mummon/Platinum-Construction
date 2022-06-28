@@ -147,7 +147,7 @@ a {
     }
 
     .banner__year {
-        border-right: 2px solid #fff;
+        border-right: 3px solid #fff;
         position: relative;
     }
 
@@ -173,7 +173,7 @@ a {
     }
 
     .banner__projects {
-        border-right: 2px solid #fff;
+        border-right: 3px solid #fff;
         position: relative;
     }
 
@@ -199,7 +199,7 @@ a {
     }
 
     .banner__contractors {
-        border-right: 2px solid #fff;
+        border-right: 3px solid #fff;
         position: relative;
     }
 
@@ -339,6 +339,10 @@ a {
 
 
 /* Services block */
+
+.block-services {
+    margin-top: 8rem;
+}
 .services__header {
     text-align: center;
     position: relative;
@@ -364,14 +368,14 @@ a {
 .services__grid {
     margin-top: 4rem;
     justify-items: center;
-    margin: 0 1rem;
+    margin: 4rem 0 4rem 0;
     row-gap: 4rem;
 }
 
 @media screen and (min-width:768px) {
     .services__grid {
         gap: 0 2rem;
-        margin: rem auto; 
+        margin: 8rem auto; 
     }
 
     .block__heading-underline {
@@ -412,6 +416,7 @@ a {
 .block-about {
     background: #f7f7f7;
     width: 100%;
+    margin-top: 8rem;
 }
 
 .about__image {
@@ -579,6 +584,12 @@ left: -15px;
 }
 
 @media screen and (min-width:768px) {
+    .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    
     .nav__menu-icon {
         display: none;
     }
