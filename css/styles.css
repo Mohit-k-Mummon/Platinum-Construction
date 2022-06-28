@@ -14,6 +14,10 @@
     margin: 0;
 }
 
+::selection {
+    background: var(--color-accent);
+    color: #000;
+}
 
 
 
@@ -147,7 +151,7 @@ a {
     }
 
     .banner__year {
-        border-right: 3px solid #fff;
+        border-right: 2px solid #fff;
         position: relative;
     }
 
@@ -173,7 +177,7 @@ a {
     }
 
     .banner__projects {
-        border-right: 3px solid #fff;
+        border-right: 2px solid #fff;
         position: relative;
     }
 
@@ -199,7 +203,7 @@ a {
     }
 
     .banner__contractors {
-        border-right: 3px solid #fff;
+        border-right: 2px solid #fff;
         position: relative;
     }
 
@@ -367,6 +371,7 @@ textarea {
     text-align: center;
     letter-spacing: 2px;
     font-size: 2.4rem;
+    text-shadow: 0 0 15px #000;
 }
 
 .hero__arrow {
@@ -379,12 +384,13 @@ textarea {
 }
 
 .hero__arrow > img {
-    filter: invert(1);
+    filter: invert(0);
     height: 50px;
     width: 50px;
     display: block;
     text-align: center;
     transition: 0.3s ease-in-out;
+    text-shadow: 0 0 20px #000;
 }
 
 .hero__arrow > img:hover {
@@ -442,7 +448,7 @@ textarea {
 @media screen and (min-width:768px) {
     .services__grid {
         gap: 0 2rem;
-        margin: 8rem auto; 
+        margin: 4rem auto 8rem auto; 
     }
 
     .block__heading-underline {
@@ -452,6 +458,7 @@ textarea {
 
     .block-services .block__heading {
         font-size: 6rem;
+        font-weight: 600;
     }
 
     .block-services .block__heading::before {
@@ -484,6 +491,7 @@ textarea {
     background: #f7f7f7;
     width: 100%;
     margin-top: 8rem;
+    overflow-x: hidden;
 }
 
 .about__image {
@@ -498,6 +506,7 @@ textarea {
 
 .about__heading {
     font-size: 3.5rem;
+    color: var(--color-primary);
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -556,12 +565,14 @@ left: -15px;
     font-size: 3.5rem;
     text-transform: uppercase;
     color: var(--color-primary);
+    margin-top: 10rem
 }
 
 .projects-grid {
     margin-top: 4rem;
     justify-content: center;
     gap: 2rem 0;
+    margin-bottom: 20rem;
 }
 
 @media screen and (min-width:768px) {
@@ -688,6 +699,7 @@ left: -15px;
 
 .block-contact__heading {
     font-size: 3.5rem;
+    color: var(--color-primary);
     margin: 0;
 }
 
@@ -767,6 +779,7 @@ iframe {
 
     .contact__grid {
         gap: 6rem;
+        margin-bottom: 8rem;
     }
 }
 
@@ -791,6 +804,7 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .footer > p {
