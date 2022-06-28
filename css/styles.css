@@ -12,6 +12,7 @@
 ::after {
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -384,13 +385,12 @@ textarea {
 }
 
 .hero__arrow > img {
-    filter: invert(0);
     height: 50px;
     width: 50px;
     display: block;
     text-align: center;
     transition: 0.3s ease-in-out;
-    text-shadow: 0 0 20px #000;
+    filter: drop-shadow(0 0 15px #000);
 }
 
 .hero__arrow > img:hover {
@@ -633,7 +633,7 @@ left: -15px;
 
 .nav__logo {
     filter: brightness(0);
-    padding: 1rem;
+    padding-left: 1rem;
 }
 
 .nav__menu-icon {
@@ -797,17 +797,24 @@ iframe {
 
 .icon-facebook:hover,
 .icon-linkedin:hover {
-    transform: translateY(-3px);
+    transform: translateY(-2px);
 }
 
 .footer {
+    padding: 0 0 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .footer > p {
     font-size: 1.4rem;
     opacity: 0.6;
+}
+
+@media screen and (min-width:768px) {
+    .footer {
+        margin-bottom: 4rem;
+    }
 }

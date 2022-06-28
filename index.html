@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Platinum Construction</title>
   </head>
   <body>
@@ -19,14 +20,14 @@
       <img class="nav__logo" src="images/logo.png" alt="" />
       <img class="nav__menu-icon" src="images/menu-icon.png" alt="" />
       <ul class="list nav__list collapsible__content">
-        <li class="list__item"><a href="#">Home</a></li>
-        <li class="list__item"><a href="#">services</a></li>
-        <li class="list__item"><a href="#">about</a></li>
-        <li class="list__item"><a href="#">projects</a></li>
-        <li class="list__item"><a href="#">contact</a></li>
+        <li class="list__item"><a href="#section-home">Home</a></li>
+        <li class="list__item"><a href="#section-services">services</a></li>
+        <li class="list__item"><a href="#section-about">about</a></li>
+        <li class="list__item"><a href="#section-projects">projects</a></li>
+        <li class="list__item"><a href="#section-contact">contact</a></li>
       </ul>
     </nav>
-    <section class="block hero">
+    <section id="section-home" class="block hero">
       <video class="hero__video" autoplay muted loop src="video/video.mp4">
         Your browser does not support videos
       </video>
@@ -34,12 +35,18 @@
         <div class="hero__text">
           Leaders in quality construction and infrastructure
         </div>
-        <span class="hero__arrow">
-          <img src="images/arrow-down-sign-to-navigate.png" alt="" />
+        <span>
+          <a class="hero__arrow" href="#section-services"
+            ><img src="images/arrow-down-sign-to-navigate.png" alt=""
+          /></a>
         </span>
       </div>
     </section>
-    <section class="block container block-services">
+    <section
+      data-aos="fade-up"
+      id="section-services"
+      class="block container block-services"
+    >
       <header class="block__header services__header">
         <h1 class="block__heading">Services</h1>
         <img
@@ -90,10 +97,15 @@
         </div>
       </div>
     </section>
-    <section class="block block-about">
+    <section id="section-about" class="block block-about">
       <div class="container">
         <div class="grid grid--1x2 about__grid">
-          <img class="about__image" src="images/about.jpg" alt="" />
+          <img
+            data-aos="fade-left"
+            class="about__image"
+            src="images/about.jpg"
+            alt=""
+          />
           <header class="block__header about__header">
             <h2 class="block__heading about__heading">About</h2>
             <img
@@ -119,7 +131,7 @@
         </div>
       </div>
     </section>
-    <section class="block">
+    <section data-aos="flip-down" class="block">
       <div class="banner-background">
         <div class="banner grid container">
           <div class="banner__year">
@@ -141,7 +153,7 @@
         </div>
       </div>
     </section>
-    <section class="block container block-projects">
+    <section id="section-projects" class="block container block-projects">
       <header class="block__header">
         <h2 class="block__heading projects__heading">Projects</h2>
         <img
@@ -150,7 +162,7 @@
           alt=""
         />
       </header>
-      <div class="grid grid--1x2 projects-grid">
+      <div data-aos="zoom-out" class="grid grid--1x2 projects-grid">
         <div class="project">
           <img class="project__image" src="images/project-1.jpg" alt="" />
           <div class="project__overlay">
@@ -177,7 +189,11 @@
         </div>
       </div>
     </section>
-    <section class="block container block-contact">
+    <section
+      data-aos="fade-up"
+      id="section-contact"
+      class="block container block-contact"
+    >
       <header class="block__header">
         <h2 class="block__heading block-contact__heading">Contact</h2>
         <img
@@ -318,5 +334,9 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
