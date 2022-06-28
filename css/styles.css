@@ -29,6 +29,7 @@ html {
 
 body {
     font-family: Rubik, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -48,6 +49,19 @@ a {
         font-size: 5.5rem;
     }
 }
+
+
+
+
+/* Anchor jump points */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -79px;
+    visibility: hidden;
+}
+
 
 
 
