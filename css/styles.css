@@ -769,3 +769,31 @@ iframe {
         gap: 6rem;
     }
 }
+
+
+
+
+/* Footer */
+.icon-facebook,
+.icon-linkedin {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+    transition: 0.3s;
+}
+
+.icon-facebook:hover,
+.icon-linkedin:hover {
+    transform: translateY(-3px);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > p {
+    font-size: 1.4rem;
+    opacity: 0.6;
+}
