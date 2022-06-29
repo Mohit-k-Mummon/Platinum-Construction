@@ -29,7 +29,7 @@
         <li class="list__item"><a href="#section-contact">contact</a></li>
       </ul>
     </nav>
-    <section id="section-home" class="block hero">
+    <div id="section-home" class="block hero">
       <video class="hero__video" autoplay muted loop src="video/video.mp4">
         Your browser does not support videos
       </video>
@@ -43,13 +43,9 @@
           /></a>
         </span>
       </div>
-    </section>
+    </div>
     <a id="section-services" href="" class="anchor"></a>
-    <section
-      data-aos="fade-up"
-      id="section-services"
-      class="block container block-services"
-    >
+    <section data-aos="fade-up" class="block container block-services">
       <header class="block__header services__header">
         <h1 class="block__heading">Services</h1>
         <img
@@ -158,7 +154,7 @@
       </div>
     </section>
     <a id="section-projects" href="" class="anchor"></a>
-    <section id="section-projects" class="block container block-projects">
+    <section class="block container block-projects">
       <header class="block__header">
         <h2 class="block__heading projects__heading">Projects</h2>
         <img
@@ -195,11 +191,7 @@
       </div>
     </section>
     <a id="section-contact" href="" class="anchor"></a>
-    <section
-      data-aos="fade-up"
-      id="section-contact"
-      class="block container block-contact"
-    >
+    <section data-aos="fade-up" class="block container block-contact">
       <header class="block__header">
         <h2 class="block__heading block-contact__heading">Contact</h2>
         <img
@@ -233,62 +225,54 @@
               <h2 class="contact__heading">Contact Us</h2>
             </header>
             <div class="input-group">
-              <label
-                class="contact__label"
-                for="first-name"
-                minlength="3"
-                maxlength="100"
-                >First Name</label
-              >
-              <input class="input" id="first-name" type="text" />
+              <label class="contact__label" for="first-name">First Name</label>
+              <input
+                class="input"
+                id="first-name"
+                type="text"
+                minlength="5"
+                maxlength="155"
+              />
             </div>
             <div class="input-group">
-              <label
-                class="contact__label"
-                for="last-name"
-                minlength="3"
-                maxlength="100"
-                >Last Name</label
-              >
-              <input class="input" id="last-name" type="text" />
+              <label class="contact__label" for="last-name">Last Name</label>
+              <input
+                class="input"
+                id="last-name"
+                type="text"
+                minlength="5"
+                maxlength="155"
+              />
             </div>
             <div class="input-group">
-              <label
+              <label class="contact__label" for="email">Email*</label>
+              <input
                 required
-                class="contact__label"
-                for="email"
-                minlength="3"
-                maxlength="100"
-                >Email*</label
-              >
-              <input class="input" id="email" type="email" />
+                class="input"
+                id="email"
+                type="email"
+                minlength="5"
+                maxlength="155"
+              />
             </div>
             <div class="input-group">
-              <label
-                required
-                class="contact__label"
-                for="subject"
-                minlength="3"
-                maxlength="100"
-                >Subject</label
-              >
-              <input class="input" id="subject" type="text" />
+              <label class="contact__label" for="subject">Subject</label>
+              <input
+                class="input"
+                id="subject"
+                type="text"
+                minlength="5"
+                maxlength="155"
+              />
             </div>
             <div class="input-group">
-              <label
-                required
-                class="contact__label"
-                for="Message"
-                minlength="3"
-                maxlength="100"
-                >Message</label
-              >
+              <label class="contact__label" for="message">Message</label>
               <textarea
                 class="input"
-                name=""
                 id="message"
                 cols="21"
                 rows="5"
+                maxlength="100"
               ></textarea>
             </div>
             <div class="button-container">
